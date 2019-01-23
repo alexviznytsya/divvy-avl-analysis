@@ -11,7 +11,7 @@ Divvy is a well-known Chicago. This program takes Divvy stations and trips data 
 
 The data will come from 2 input files, both in CSV format (Comma-Separated Values).This C program organize input data it into 3 AVL trees, and perform the requested analyses / output.
 
-![alt text](./screenshots/divvy_avl_analysis_1.jpg "Screenshot 1")
+![Screenshot 1](./screenshots/divvy_avl_analysis_1.jpg "Screenshot 1")
 
 ## User Commands:
 1. stats - outputs the # of nodes, and the height, of each tree (Picture above).
@@ -27,7 +27,7 @@ For each station, output is the id, name, location in (latitude, longitude), cap
 For each trip, output is the trip id, the bike id for the bike that was used, the “from” station id (where the trip originated), and the “to” station id (where the trip ended). Also trip has output of the duration in minutes and seconds.
 For each bike, output is the bike id, and the trip count --- the # of times the bike was used in a trip.
 
-![alt text](./screenshots/divvy_avl_analysis_2.jpg "Screenshot 2")
+![Screenshot 2](./screenshots/divvy_avl_analysis_2.jpg "Screenshot 2")
 
  5. find **_latitude_** **_longitude_** **_distance_** - finds Divvy stations that are nearby to the position entered by the user. The user inputs their latitude, longitude, and distance they are willing to ride (in miles), and the program outputs the Divvy stations whose position is <= that distance away. The stations are sorted and output by their distance from the entered position; if 2 stations are the same distance away, then those stations are in order by station id.
 
@@ -35,6 +35,8 @@ For each bike, output is the bike id, and the trip count --- the # of times the 
 Let **S’** be all stations that are <= distance away from **S**,
 and let **D’** be all stations that are <= distance away from **D**.
 Route command searches the trip data and count all trips that start from a station in **S’**, and end at a station in  **D’** . Then its computes the overall percentage this count represents, i.e. (trip count / total # of trips) * 100.
+
+![Screenshot 3](./screenshots/divvy_avl_analysis_3.jpg "Screenshot 3")
 
 ## CSV Stations file stucture:
 
